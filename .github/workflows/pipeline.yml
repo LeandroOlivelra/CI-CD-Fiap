@@ -32,8 +32,8 @@ jobs:
 
     - name: Build and analyze
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_AUTOGLASS }}
+        GITHUB_TOKEN: ${{ secrets.SONAR_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.Test-Sonar-FIAP }}
       run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.qualitygate.wait=true -Dsonar.projectKey=Test-Sonar-FIAP
       
   unit-test:
