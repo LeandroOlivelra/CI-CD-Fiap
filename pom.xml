@@ -19,7 +19,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<sonar.organization>test-sonar-fiap</sonar.organization>
-		<sonar.projectKey>devops</sonar.projectKey>
+		<sonar.projectKey>test-sonar-fiap_devops</sonar.projectKey>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
